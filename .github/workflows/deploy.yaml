@@ -1,9 +1,9 @@
 name: testign-github-actions
 
 on:
-    # push:
-    #     branches:
-    #         - dev
+    push:
+        branches:
+            - dev
     #         - qa
     #         - main
     workflow_dispatch:
