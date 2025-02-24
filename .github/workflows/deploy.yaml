@@ -1,0 +1,15 @@
+name: testign-github-actions
+
+on:
+    push:
+        branches:
+            - dev
+            - qa
+    # workflow_dispatch:  # This enables manual trigger from GitHub UI
+
+jobs:
+    xyz:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v3
