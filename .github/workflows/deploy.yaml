@@ -1,10 +1,10 @@
 name: testign-github-actions
 
 on:
-    push:
-        branches:
-            - dev
-            - qa
+    # push:
+    #     branches:
+    #         - dev
+    #         - qa
     workflow_dispatch:
         inputs:
             tag:
@@ -20,4 +20,5 @@ jobs:
               uses: actions/checkout@v3
 
             - name: Print Tag Input
-              run: echo "The tag is: ${{ github.event.inputs.tag }}"
+              run: |
+                echo "The tag is: ${{ github.event.inputs.tag }}"
