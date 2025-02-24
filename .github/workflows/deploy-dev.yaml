@@ -1,11 +1,6 @@
-name: testign-github-actions
+name: github-actions-test-1
 
 on:
-    # push:
-    #     branches:
-    #         - dev
-    #         - qa
-    #         - main
     workflow_dispatch:
         inputs:
             tag:
