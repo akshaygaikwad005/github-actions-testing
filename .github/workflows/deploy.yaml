@@ -1,24 +1,24 @@
-name: testign-github-actions
+# name: testign-github-actions
 
-on:
-    # push:
-    #     branches:
-    #         - dev
-    #         - qa
-    workflow_dispatch:
-        inputs:
-            tag:
-                description: 'Tag name for the release'
-                required: true
-                default: 'v1.0.0'  # You can set a default value if you want
+# on:
+#     # push:
+#     #     branches:
+#     #         - dev
+#     #         - qa
+#     workflow_dispatch:
+#         inputs:
+#             tag:
+#                 description: 'Tag name for the release'
+#                 required: true
+#                 default: 'v1.0.0'  # You can set a default value if you want
 
-jobs:
-    xyz:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout Code
-              uses: actions/checkout@v3
+# jobs:
+#     xyz:
+#         runs-on: ubuntu-latest
+#         steps:
+#             - name: Checkout Code
+#               uses: actions/checkout@v3
 
-            - name: Print Tag Input
-              run: |
-                echo "The tag is: ${{ github.event.inputs.tag }}"
+#             - name: Print Tag Input
+#               run: |
+#                 echo "The tag is: ${{ github.event.inputs.tag }}"
